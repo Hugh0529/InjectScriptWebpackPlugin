@@ -4,7 +4,10 @@ const fs = require('fs')
 class InjectScriptWebpackPlugin {
   constructor(options = {}) {
     this.options = options
-    this.canInject = !!this.options.inject || process.argv.indexOf('inject') > -1 || process.argv.indexOf('debug') > -1
+    const {src} = {options}
+    this.canInject = !!src &&
+      (!!this.options.inject || process.argv.indexOf('inject') > -1 || process.argv.indexOf('debug') > -1)
+    !src && console.log('please set src in InjectScriptWebpackPlugin')
   }
 
   getIp ()  {
