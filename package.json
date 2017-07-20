@@ -1,12 +1,17 @@
 {
   "name": "inject-script-webpack-plugin",
   "version": "1.0.0",
-  "description": "auto inject script, when you need debug",
+  "description": "webpack plugin to auto inject script, when you need debug",
   "main": "index.js",
-  "directories": {
+  "directories": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hugh0529/InjectScriptWebpackPlugin.git"
   },
-  "scripts": {
+  "bugs": {
+    "url": "https://github.com/Hugh0529/InjectScriptWebpackPlugin/issues"
   },
+  "scripts": {},
   "keywords": [
     "inject",
     "script",
@@ -14,5 +19,8 @@
     "plugin"
   ],
   "author": "Hugh",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "os": "^0.1.1"
+  }
 }
