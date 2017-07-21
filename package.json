@@ -1,6 +1,6 @@
 {
   "name": "inject-script-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "webpack plugin to auto inject script, when you need debug",
   "main": "index.js",
   "directories": {},
