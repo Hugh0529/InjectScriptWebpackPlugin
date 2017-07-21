@@ -16,7 +16,7 @@
 1. install
 
 	```
-		npm install --save-dev InjectScriptWebpackPlugin
+	npm install --save-dev inject-script-webpack-plugin
 	```
 
 2. setting
@@ -29,10 +29,12 @@
 	```
 	- `src` is required, and accept `[ip]` to set your ip address
 	- when you set `inject`, or when you set `debug` in your command line, it will work
+	- if you want control in command line, do not set `inject`
 	
 3. example
 
 	```
+	if not set inject:
 	node server.js debug
 	or
 	npm run build -- debug
